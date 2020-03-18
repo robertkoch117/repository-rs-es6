@@ -1,12 +1,9 @@
 //REST
 
-const usuario = {
-    nome: 'Robert',
-    idade: 21,
-    empresa: 'Nenhuma'
-};
+const arr = [1, 2, 3, 4];
 
-const {nome, ...resto} = usuario;
+const [a, b, ...c] = arr;
 
-console.log(nome);
-console.log(resto);
+console.log(a);
+console.log(b);
+console.log(c);
