@@ -1,18 +1,12 @@
+//REST
+
 const usuario = {
-    nome: 'Diego',
-    idade: 23,
-    endereco: {
-        cidade: 'Rio do Sul',
-        estado: 'SC',
-    },
+    nome: 'Robert',
+    idade: 21,
+    empresa: 'Nenhuma'
 };
 
-/*function mostraNome(usuario){
-    console.log(usuario.nome);
-}*/
+const {nome, ...resto} = usuario;
 
-function mostraNome({nome, idade}){
-    console.log(nome, idade);
-}
-
-mostraNome(usuario);
+console.log(nome);
+console.log(resto);
