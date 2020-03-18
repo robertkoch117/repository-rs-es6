@@ -8,13 +8,14 @@ var usuario = {
     estado: 'SC'
   }
 };
-/*const nome = usuario.nome;
-const idade = usuario.nome;
-const cidade = usuario.endereco.cidade;*/
+/*function mostraNome(usuario){
+    console.log(usuario.nome);
+}*/
 
-var nome = usuario.nome,
-    idade = usuario.idade,
-    cidade = usuario.endereco.cidade;
-console.log(nome);
-console.log(idade);
-console.log(cidade);
+function mostraNome(_ref) {
+  var nome = _ref.nome,
+      idade = _ref.idade;
+  console.log(nome, idade);
+}
+
+mostraNome(usuario);
