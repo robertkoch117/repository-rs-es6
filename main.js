@@ -1,19 +1,5 @@
-//REST
+const nome = "Robert";
+const idade = 21;
 
-function soma(a,b,...params){
-    return params;
-}
-
-console.log(soma(1,3,4,4,5,6,7));
-
-//SPREAD
-
-const usuario1 = {
-    nome: 'Robert',
-    idade: 21,
-    empresa: "Nenhuma",
-};
-
-const usuario2 = {...usuario1, nome:'Gabriel'};
-
-console.log(usuario2);
+//console.log("Meu nome é "+ nome + " e tenho " + idade + " anos");
+console.log(`Meu nome é ${nome} e tenho ${idade} anos.`);
